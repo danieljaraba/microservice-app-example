@@ -23,3 +23,9 @@ spec:
           env:
             - name: ZIPKIN_URL
               value: http://zipkin:9411/api/v2/spans
+            - name: AUTH_API_PORT
+              value: "8000"
+            - name: USERS_API_ADDRESS
+              value: http://users-api:8083
+            - name: JWT_SECRET
+              value: PRFT

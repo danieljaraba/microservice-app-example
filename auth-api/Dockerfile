@@ -16,10 +16,5 @@ RUN go build -o main .
 # Expose port 8083 to the outside world
 EXPOSE 8000
 
-# Define environment variable
-ENV AUTH_API_PORT=8000
-ENV USERS_API_ADDRESS=http://users-api:8083
-ENV JWT_SECRET=PRFT
-
 # Command to run the application
 CMD ["./main"]

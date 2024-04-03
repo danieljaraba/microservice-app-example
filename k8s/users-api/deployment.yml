@@ -17,6 +17,11 @@ spec:
     spec:
       containers:
         - name: users-api
-          image: danieljaraba/users-api:latest
+          image: arturodiaz02/microservice-app-example-users
           ports:
             - containerPort: 8083
+          env:
+            - name: SERVER_PORT
+              value: "8083"
+            - name: JWT_SECRET
+              value: PRFT
